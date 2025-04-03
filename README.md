@@ -1,7 +1,7 @@
 ```markdown
 # 🚀 MeuApp - Powered by TypeScript, Docker & +
 
-Feito com carinho por [Vin1ci0](https://github.com/Vin1ci0) 
+Feito por [Vin1ci0](https://github.com/Vin1ci0) 
 Uma API REST simples, rápida e containerizada!
 
 ## 🛠 Tecnologias
