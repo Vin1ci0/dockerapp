@@ -24,7 +24,7 @@ docker-compose up --build
 
 ## 🐳 Docker Hub
 
-📦 Imagem: [`vin1ci0/meuapp`](https://hub.docker.com/r/vin1ci0/meuapp)
+📦 Imagem: [`vinici0s/meuapp`](https://hub.docker.com/r/vinici0s/meuapp)
 
 ---
 
