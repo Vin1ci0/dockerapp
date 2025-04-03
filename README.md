@@ -16,18 +16,11 @@ Uma API REST simples, rápida e containerizada!
 
 Clone, suba, use. Fácil assim:
 
-```bash
+bash
 git clone https://github.com/Vin1ci0/seu-repositorio.git
 cd seu-repositorio
 docker-compose up --build
-```
 
-
-## 🌐 Rotas disponíveis
-
-- `GET /posts` → Ver todos os posts  
-- `GET /posts/:id` → Ver um post específico  
-- `POST /posts` → Criar um novo post
 
 ## 🐳 Docker Hub
 
