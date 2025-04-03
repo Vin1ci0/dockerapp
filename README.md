@@ -1,82 +1,40 @@
 ```markdown
-# TypeScript + Express + TypeORM API
+# 🚀 MeuApp - Powered by TypeScript, Docker & +
 
-API simples construída com TypeScript, Express e TypeORM, conectada a um banco MySQL. A aplicação está containerizada com Docker e pronta para ser implantada em ambientes Kubernetes.
+Feito com carinho por [Vin1ci0](https://github.com/Vin1ci0) 
+Uma API REST simples, rápida e containerizada!
 
-## 🧰 Tecnologias
+## 🛠 Tecnologias
 
-- Node.js
 - TypeScript
 - Express
 - TypeORM
 - MySQL
-- Docker / Docker Compose
-- Kubernetes
-- Helm
-- Terraform
+- Docker + Docker Compose
 
-## 🚀 Como usar
+## ▶️ Como rodar
 
-### Clonar o repositório
+Clone, suba, use. Fácil assim:
 
 ```bash
 git clone https://github.com/Vin1ci0/seu-repositorio.git
 cd seu-repositorio
-```
-
-### Rodar com Docker Compose
-
-```bash
 docker-compose up --build
 ```
 
-A aplicação estará disponível em `http://localhost:3000`.
 
-### Testar rotas
+## 🌐 Rotas disponíveis
 
-- `GET /posts` – Lista todos os posts
-- `GET /posts/:id` – Busca post por ID
-- `POST /posts` – Cria um novo post
+- `GET /posts` → Ver todos os posts  
+- `GET /posts/:id` → Ver um post específico  
+- `POST /posts` → Criar um novo post
 
-### Exemplo de corpo para `POST /posts`
+## 🐳 Docker Hub
 
-```json
-{
-  "title": "Meu primeiro post",
-  "text": "Conteúdo do post",
-  "categories": [{ "name": "tech" }]
-}
-```
-
-## 📦 Build e Deploy (produção)
-
-```bash
-docker build -t vin1ci0/meuapp .
-docker push vin1ci0/meuapp
-```
-
-Depois, use Helm + Kubernetes + Terraform para implantação.
+📦 Imagem: [`vin1ci0/meuapp`](https://hub.docker.com/r/vin1ci0/meuapp)
 
 ---
 
-## 📁 Estrutura do Projeto
-
+> Simples. Direto. Funcionando.  
+> _Feito pra rodar em qualquer lugar._
 ```
-src/
-├── controller/
-├── entity/
-├── migration/
-├── routes.ts
-├── index.ts
-```
-
----
-
-## 📄 Licença
-
-MIT
-```
-
----
-
-Se quiser também um README separado para a imagem no Docker Hub, posso te montar!
