@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: meuapp
-            image: seu-usuario/meuapp:latest
+          image: vinici0s/meuapp:latest
           ports:
-        - containerPort: 3000
+            - containerPort: 3000
           envFrom:
-        - secretRef:
-            name: meuapp-secrets
+            - secretRef:
+                name: meuapp-secrets
