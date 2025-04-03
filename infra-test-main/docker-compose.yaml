@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:8
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+    ports:
+      - "3306:3306"
+    networks:
+      - app_network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: meuapp_container
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      TYPEORM_CONNECTION: mysql
+      TYPEORM_HOST: db   # Mudamos de localhost para 'db' (o nome do serviço do banco)
+      TYPEORM_PORT: 3306
+      TYPEORM_USERNAME: test
+      TYPEORM_PASSWORD: test
+      TYPEORM_DATABASE: test
+      TYPEORM_SYNCHRONIZE: true
+    ports:
+      - "3000:3000"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
