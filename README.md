@@ -14,7 +14,7 @@ Uma API REST simples, rápida e containerizada!
 
 ## ▶️ Como rodar
 
-Clone, suba, use. Fácil assim:
+Clone, suba, use:
 
 ## bash
 git clone https://github.com/Vin1ci0/seu-repositorio.git
@@ -27,7 +27,6 @@ docker-compose up --build
 📦 Imagem: [`vinici0s/meuapp`](https://hub.docker.com/r/vinici0s/meuapp)
 
 ---
-
-> Simples. Direto. Funcionando.  
+ 
 > _Feito pra rodar em qualquer lugar._
 ```
